@@ -671,6 +671,10 @@ video {
   background-size: cover;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -747,8 +751,32 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
+.animate-alternate-reverse {
+  animation-direction: alternate-reverse;
+}
+
 .animate-duration-\[600ms\] {
   animation-duration: 600ms;
+}
+
+.animate-duration-\[700ms\] {
+  animation-duration: 700ms;
+}
+
+.animate-duration-\[1000ms\] {
+  animation-duration: 1000ms;
+}
+
+.animate-duration-\[1700ms\] {
+  animation-duration: 1700ms;
+}
+
+.animate-duration-\[1s\] {
+  animation-duration: 1s;
+}
+
+.animate-ease-in {
+  animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .animate-ease-in-out {
