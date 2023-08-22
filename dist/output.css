@@ -534,18 +534,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.absolute {
-  position: absolute;
-}
-
-.right-0 {
-  right: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
 .flex {
   display: flex;
 }
@@ -596,6 +584,24 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@keyframes jump-out {
+  0% {
+    transform: scale(100%);
+  }
+
+  20% {
+    transform: scale(120%);
+  }
+
+  100% {
+    transform: scale(0%);
+  }
+}
+
+.animate-jump-out {
+  animation: jump-out .5s both;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -632,14 +638,6 @@ video {
   border-radius: 0.5rem;
 }
 
-.rounded-bl-\[10px\] {
-  border-bottom-left-radius: 10px;
-}
-
-.rounded-tr-\[8px\] {
-  border-top-right-radius: 8px;
-}
-
 .border-2 {
   border-width: 2px;
 }
@@ -661,31 +659,16 @@ video {
   --tw-border-opacity: 0.2;
 }
 
-.bg-\[\#4E1903\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(78 25 3 / var(--tw-bg-opacity));
-}
-
 .bg-transparent {
   background-color: transparent;
 }
 
-.bg-bg-image {
-  background-image: url('/dist/background.jpg');
+.bg-image {
+  background-image: url('../dist/background.jpg');
 }
 
 .bg-cover {
   background-size: cover;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .pl-2 {
@@ -717,11 +700,6 @@ video {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -765,16 +743,16 @@ video {
   transition-delay: 75ms;
 }
 
-.duration-\[\.3s\] {
-  transition-duration: .3s;
-}
-
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.animate-duration-\[600ms\] {
+  animation-duration: 600ms;
+}
+
+.animate-ease-in-out {
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .placeholder\:pl-2::-moz-placeholder {
