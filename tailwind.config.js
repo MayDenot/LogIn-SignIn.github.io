@@ -1,15 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./dist/**/*.{html, js}"],
-  theme: {
-    extend: {
-      backgroundImage: {
-        'bg-image': "url('/dist/background.jpg')",
-      },
-      fontFamily: {
-        'poppins': ["Poppins", "Cascadia Mono PL", "Cascadia Mono"],
-      }
+export const content = ['./dist/**/*.{html, js}']
+export const theme = {
+  extend: {
+    backgroundImage: {
+      'bg-image': "url('/dist/background.jpg')"
     },
-  },
-  plugins: [],
+    fontFamily: {
+      poppins: ['Poppins', 'Cascadia Mono PL', 'Cascadia Mono']
+    }
+  }
 }
+export const plugins = [
+  require('tailwindcss-animated')
+]
